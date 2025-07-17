@@ -13,7 +13,7 @@ def process_data(data: list[int]) -> list[Optional[int]]:
             if abs(value) > 10:
                 negative_abs = [abs(v) for v in data if v < 0]
                 result.extend(negative_abs)
-                break  # Avoid further processing since list was reset previously
+                break 
             else:
                 result.append(0)
         else:  # value == 0
