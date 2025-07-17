@@ -8,7 +8,7 @@ def process_data(data: list[int]) -> list[Optional[int]]:
             if value % 2 == 0:
                 result.append(value * 2)
             else:
-                result.extend([value] * value)  # Clean loop using list multiplication
+                result.extend([value] * value) 
         elif value < 0:
             if abs(value) > 10:
                 negative_abs = [abs(v) for v in data if v < 0]
